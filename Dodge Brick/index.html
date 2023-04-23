@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 style="background: white;"></canvas>
+    <div id="unity-container" class="unity-desktop" >
+      <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
-        <div id="unity-logo" style="visibility: hidden;"></div>
         <div id="unity-progress-bar-empty">
           <div id="unity-progress-bar-full"></div>
         </div>
       </div>
       <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Dodge Brick by J0nathan550</div>
+      <div id="unity-footer" style="font-family: 'Courier New', Courier, monospace; font-weight: bold; font-size: 24px;">
+        by J0nathan550
+        <div style="visibility: hidden;" id="unity-fullscreen-button"></div>
+        <div id="unity-build-title" style="font-weight: bold;  font-family: 'Courier New', Courier, monospace;">Dodge Brick</div>
       </div>
     </div>
     <script>
@@ -55,11 +55,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Output.loader.js";
+      var loaderUrl = buildUrl + "/NormalOutput.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Output.data.br",
-        frameworkUrl: buildUrl + "/Output.framework.js.br",
-        codeUrl: buildUrl + "/Output.wasm.br",
+        dataUrl: buildUrl + "/NormalOutput.data",
+        frameworkUrl: buildUrl + "/NormalOutput.framework.js",
+        codeUrl: buildUrl + "/NormalOutput.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "J0nathan550",
         productName: "Dodge Brick",
@@ -93,7 +93,7 @@
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
         canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.height = "890px";
       }
 
       loadingBar.style.display = "block";
