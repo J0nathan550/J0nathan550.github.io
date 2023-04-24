@@ -11,6 +11,7 @@
     <meta property="og:image:height" content="1280">
     <meta property="og:title" content="Play Silly Cat Game">
     <meta property="og:image:width" content="920">
+    <script defer src="game.js"></script>
     <link rel="shortcut icon" href="TemplateData/favicon.jpg">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -22,12 +23,13 @@
           <div id="unity-progress-bar-full"></div>
         </div>
       </div>
-      <div id="unity-warning"> </div>
+      <div id="unity-warning"></div>
       <div id="unity-footer" style="font-family: 'Courier New', Courier, monospace; font-weight: bold; font-size: 24px;">
         by J0nathan550
         <div style="visibility: hidden;" id="unity-fullscreen-button"></div>
         <div id="unity-build-title" style="font-weight: bold;  font-family: 'Courier New', Courier, monospace;">Dodge Brick</div>
       </div>
+      <div class="website-counter" style="display: flex; align-items: center; justify-content: center; margin-left: 15%; font-family: 'Courier New'"></div>
     </div>
     <script>
       var container = document.querySelector("#unity-container");
