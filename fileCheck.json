@@ -1,14 +1,11 @@
 {
   "fileExtensions": [
     ".dll",
-    ".asi",
     ".ini",
-    ".not_use_asi",
     ".cfg",
     ".exe",
     ".txt",
     ".ttf",
-    ".ASI",
     ".png",
     ".saa",
     ".ifp",
